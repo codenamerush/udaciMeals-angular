@@ -12,4 +12,9 @@ angular.module('udaciMealsApp')
   	this.getMenu = function() {
   		return $.get('data/menu.json');
   	};
+
+  	this.getItem = function(id) {
+  		var menuItemFile = '/data/' + id + '.json';
+  		return $.get(menuItemFile);
+  	};
   });

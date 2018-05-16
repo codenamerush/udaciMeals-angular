@@ -52,7 +52,7 @@ angular.module('udaciMealsApp')
     	orderSelection[selectedDay][meal] = menuItem;
     };
 
-    this.getActiveDay = function(day, menuCategory) {
+    this.removeMenuOption = function(day, menuCategory) {
     	orderSelection[day][menuCategory] = '';
     };
 
